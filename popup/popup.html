@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">⚡ FOMO Saver</div>
+      <div class="header-actions">
+        <button id="btn-search" class="icon-btn" title="Search bookmarks">🔍</button>
+        <button id="btn-settings" class="icon-btn" title="Settings">⚙️</button>
+      </div>
+    </div>
+
+    <!-- Quick Save Section -->
+    <div id="quick-save" class="section">
+      <div class="page-info">
+        <div id="page-title" class="page-title">Loading...</div>
+        <div id="page-url" class="page-url"></div>
+      </div>
+      <div class="form-row">
+        <select id="category">
+          <option value="Tech">Tech</option>
+          <option value="Design">Design</option>
+          <option value="Business">Business</option>
+          <option value="Learning">Learning</option>
+          <option value="News">News</option>
+          <option value="Tools">Tools</option>
+          <option value="Other" selected>Other</option>
+        </select>
+        <button id="btn-ai" class="btn-ai" title="AI auto-fill">🤖</button>
+      </div>
+      <input id="tags" type="text" placeholder="Tags (comma separated)" />
+      <textarea id="notes" placeholder="Quick note (optional)..." rows="2"></textarea>
+      <button id="btn-save" class="btn-save">💾 Save This Page</button>
+    </div>
+
+    <!-- Search Section (hidden by default) -->
+    <div id="search-section" class="section hidden">
+      <input id="search-input" type="text" placeholder="Search your bookmarks..." />
+      <div id="search-results"></div>
+    </div>
+
+    <!-- Recent Bookmarks -->
+    <div class="section">
+      <div class="section-title">Recent Saves</div>
+      <div id="recent-list"></div>
+    </div>
+
+    <!-- Status -->
+    <div id="status" class="status hidden"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

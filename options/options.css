@@ -1,0 +1,86 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 24px;
+}
+
+.container { max-width: 520px; margin: 0 auto; }
+
+h1 {
+  font-size: 22px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+h2 { font-size: 16px; margin-bottom: 14px; }
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 10px 0 4px;
+}
+
+select, input[type="text"], input[type="password"] {
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #e2e8f0;
+  font-size: 13px;
+  outline: none;
+}
+
+.btn-primary {
+  width: 100%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border: none;
+  border-radius: 10px;
+  padding: 11px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.btn-secondary {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 10px;
+  color: #94a3b8;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.btn-secondary:hover { background: rgba(255,255,255,0.08); }
+
+#status {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  display: none;
+}
+
+.hidden { display: none; }
+
+p { font-size: 13px; color: #94a3b8; line-height: 1.5; }
